@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마스크 알리미</title>
+    <link href="./mask_list.css" rel="stylesheet">
+
+    <!-- fontawsome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <div class="back-btn-wrapper">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </div>
+            공적 마스크 데이터 목록 보기
+        </div>
+    </header>
+
+    <!-- 로더 -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <div class="container">
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">판매처</th>
+                <th scope="col">재고 상태</th>
+                <th scope="col">입고 등록 시간</th>
+                <th scope="col">업데이트 시간</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>@mdo</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+
+
+    <!-- 장소검색 API를 사용하기 위해서는 &libraries=services를 꼭 작성해야 함 -->
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cf7e20069421d52a8fb04b9ccfcde347&libraries=services"></script>
+    <script type="text/javascript" src="./mask_list.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마스크알리미</title>
+    <link href="./mask_nearby.css" rel="stylesheet">
+
+    <!-- fontawsome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <div class="back-btn-wrapper">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div id="main">
+            <!-- 로더 -->
+            <div class="loader-wrapper">
+                <div class="loader"></div>
+            </div>
+
+            <!-- 검색창 -->
+            <div class="search-bar-positioner">
+                <div class="search-bar-wrapper">
+                    <input type="text" id="search-bar" placeholder="목적지를 검색하세요">
+                    <div class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- 지도를 띄울 부분 -->
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- 장소검색 API를 사용하기 위해서는 &libraries=services를 꼭 작성해야 함 -->
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cf7e20069421d52a8fb04b9ccfcde347&libraries=services"></script>
+    <script type="text/javascript" src="./mask_nearby.js"></script>
+
+</body>
+
+</html>
